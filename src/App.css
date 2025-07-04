@@ -1,0 +1,118 @@
+body{
+  margin: 0; 
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(166, 220, 235) ;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 5px 20px rgb(0, 0, 0)
+
+}
+.input-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border : 2px solid rgb(166, 220, 235);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inputcity{
+  flex:1;
+  border:  none;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  
+}
+.serIcon{
+  padding: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+.serIcon img{
+  width:45px;
+  height: 45px;
+}
+.image{
+  text-align: center;
+  height: 20px;
+  margin-bottom: 140px;
+}
+.image img{
+  width: 130px;
+  height: 130px;
+}
+.temp,
+.city,
+.country{
+  margin-top: 3px;
+  font-size: 30px;
+  color:#333;
+  text-transform: uppercase;
+  text-align: center;
+}
+.temp{
+  font-weight: 500;
+}
+.city{
+  color: rgb(37, 201, 247);
+  font-weight: 400;
+  font-size: 40px;
+  
+}
+.country{
+  font-size: 20px;
+  color: #8c73d1;
+  font-weight: 600;
+}
+.cord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin-top: 5px;
+}
+.cord div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+}
+.cord div span{
+  font-size:20px ;
+  
+}
+
+.cord div span:nth-child(2){
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+  color: #0b9d87fa;
+
+}
+
+.data-container img{
+  width: 50px;
+  height: 50px;
+}
+.data-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+.element{
+  text-align: center;
+}
