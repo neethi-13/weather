@@ -10,7 +10,7 @@ import dizzle from './assets/dizzle.png'
 import ICON from './assets/icon.png'
 import mist from './assets/mist.png';
 import thunder from './assets/thunderstorm.png';
-
+import PropTypes from 'prop-types';
 import './App.css'
 
 const WeatherDetails= ({icon ,temp,city ,country , lat ,log , humi ,winds}) => {
@@ -105,7 +105,7 @@ function App() {
       console.log(data);
       if(data.cod === "404"){
        console.error("City Not Found");
-        alert("City Not Found \n Enter Correct City Name Correctly");
+        alert("City Not Found \n OR \n Enter City Name Correctly");
         
         return;
       }
@@ -161,3 +161,14 @@ useEffect( function () {
 }
 
 export default App
+WeatherDetails.propTypes ={
+  icon:PropTypes.string.isRequired,
+  temp:PropTypes.number.isRequired,
+  city:PropTypes.string.isRequired,
+  country:PropTypes.string.isRequired,
+  lat:PropTypes.number.isRequired,
+  log:PropTypes.number.isRequired,
+  humi:PropTypes.number.isRequired,
+  winds:PropTypes.number.isRequired,
+
+}
