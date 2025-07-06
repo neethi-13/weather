@@ -119,5 +119,6 @@ body{
 .p{
   font-size: 20px;
   font-weight: 600;
-  color: rgb(30, 229, 226);
+  color: rgb(236, 42, 42);
+  text-align: center;
 }
