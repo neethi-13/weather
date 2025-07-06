@@ -116,3 +116,8 @@ body{
 .element{
   text-align: center;
 }
+.p{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(30, 229, 226);
+}
