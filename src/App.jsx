@@ -66,7 +66,7 @@ function App() {
   const [log ,setLog] = useState(0);
   const [humi, SetHumi] = useState(0);
   const [winds ,setWinds] = useState(0);
-  const [citynotFound , setCityNotFound] = useState(false);
+  
   const [loading , setLoading]= useState(false);
   const weatherIconMap ={
     "01d": clear,
@@ -105,9 +105,8 @@ function App() {
       console.log(data);
       if(data.cod === "404"){
        console.error("City Not Found");
-        alert("City Not Found \n Enter Correct City Name");
-        // setCityNotFound(true);
-        // setLoading(false);
+        alert("City Not Found \n Enter Correct City Name Correctly");
+        
         return;
       }
       SetHumi(data.main.humidity);
@@ -153,7 +152,7 @@ useEffect( function () {
         </div>
        
         </div>
-        <p></p>
+        {loading && <p className='p'>Loading ....</p>}
         <WeatherDetails icon ={icon} temp ={temp}  city={city} country ={country} lat = {lat} log={log} humi ={humi} winds={winds} />
       </div>
       
