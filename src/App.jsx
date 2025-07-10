@@ -12,7 +12,7 @@ import mist from './assets/mist.png';
 import thunder from './assets/thunderstorm.png';
 import PropTypes from 'prop-types';
 import './App.css'
-
+import { Analytics } from "@vercel/analytics/next"
 const WeatherDetails= ({icon ,temp,city ,country , lat ,log , humi ,winds}) => {
   return ( 
     <>
