@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { useState , useEffect } from 'react'
 import rain from './assets/rain.png';
 import clear from './assets/clear.png'
@@ -50,6 +51,7 @@ const WeatherDetails= ({icon ,temp,city ,country , lat ,log , humi ,winds}) => {
 
         </div>
       </div>
+      <Analytics />
     </>
   );
  };
