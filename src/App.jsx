@@ -8,7 +8,7 @@ import humitity from './assets/humitity.png'
 import snow from './assets/snow.png'
 import wind from './assets/wind.png'
 import dizzle from './assets/dizzle.png'
-import ICON from './assets/icon.png'
+import weather from './assets/weather.png'
 import mist from './assets/mist.png';
 import thunder from './assets/thunderstorm.png';
 import PropTypes from 'prop-types';
@@ -18,7 +18,7 @@ const WeatherDetails= ({icon ,temp,city ,country , lat ,log , humi ,winds}) => {
   return ( 
     <>
       <div className='image'>
-        <img src={icon} alt="fklhj" />
+        <img src={icon} alt="" />
       </div>
       <div className="temp">{temp}°C</div>
       <div className="city">{city}</div>
@@ -51,7 +51,7 @@ const WeatherDetails= ({icon ,temp,city ,country , lat ,log , humi ,winds}) => {
 
         </div>
       </div>
-      <Analytics />
+      <Analytics />̥
     </>
   );
  };
@@ -59,7 +59,7 @@ const WeatherDetails= ({icon ,temp,city ,country , lat ,log , humi ,winds}) => {
 
 
 function App() {
-  const [icon ,setIcon] = useState(ICON); 
+  const [icon ,setIcon] = useState(weather); 
   const [temp ,setTemp] = useState(0);
   const [city ,setCity] = useState("City");
   const [ inp ,setInp] = useState("SIVAKASI");

@@ -2,7 +2,7 @@ body{
   margin: 0; 
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: rgb(166, 220, 235) ;
+  background-color: #7297d5 ;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -12,15 +12,17 @@ body{
 .container{
   width: 350px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #172a88;
   border-radius: 25px;
   box-shadow: 0 5px 20px rgb(0, 0, 0)
+  
 
 }
 .input-container{
   width: 100%;
   display: flex;
   align-items: center;
+  
   border : 2px solid rgb(166, 220, 235);
   border-radius: 10px;
   overflow: hidden;
@@ -31,8 +33,14 @@ body{
   border:  none;
   padding: 10px;
   font-size: 16px;
+  color: aliceblue;
   outline: none;
+  background-color:#172a88 ;
   
+}
+
+.input-container input::placeholder{
+  color: aliceblue;
 }
 .serIcon{
   padding: 10px;
@@ -63,6 +71,7 @@ body{
 }
 .temp{
   font-weight: 500;
+  color: aliceblue;
 }
 .city{
   color: rgb(37, 201, 247);
@@ -81,6 +90,7 @@ body{
   align-items: center;
   gap: 10px;
   text-align: center;
+  color: aliceblue;
   margin-top: 5px;
 }
 .cord div{
@@ -111,6 +121,7 @@ body{
 .data-container{
   display: flex;
   justify-content: space-between;
+  color: aliceblue;
 
 }
 .element{
